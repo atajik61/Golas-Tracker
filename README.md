@@ -1,16 +1,116 @@
-# React + Vite
+#  Goals Tracker App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive **Goals Tracking Web Application** built with React and Material UI.  
+This project helps users manage their goals, track progress, build streaks, earn XP, and stay productive with a clean dashboard UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+##  Project Overview
 
-## React Compiler
+This application allows users to:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Create personal goals (e.g., React practice, fitness, study)
+- Track daily progress using logs
+- Monitor streaks (consecutive daily activity)
+- Earn XP based on activity and consistency
+- Organize goals by categories
+- View statistics in a dashboard
+- Manage completed and active goals
+- Switch between dark and light mode
+- Use the app in English or Persian (RTL/LTR support)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##  Features
+
+- Create, edit, and delete goals
+- Add daily progress logs
+- Streak tracking system
+- XP reward system
+- Categories for goals
+- Dashboard analytics
+- Active / Completed goals pages
+- Goal details page
+- Settings page (theme + language)
+- Dark / Light mode support
+- Fully responsive design
+- Multi-language support (EN / FA)
+- RTL / LTR layout switching
+
+---
+
+##  Streak & XP Rules
+
+###  Streak System
+- A streak increases when the user completes a goal on consecutive days
+- If a day is missed, the streak resets to zero
+
+###  XP System
+- Each completed action gives XP
+- Higher streak increases XP bonus
+- XP is shown in dashboard statistics
+
+---
+
+## Language & RTL / LTR Support
+
+The app supports:
+
+- English → Left to Right (LTR)
+- Persian → Right to Left (RTL)
+
+Handled dynamically using:
+
+```js id="rtl1"
+document.body.dir = i18n.language === "fa" ? "rtl" : "ltr";
+```
+
+## Pages
+🏠 Dashboard → overview of stats and active goals<br/>
+🎯 Goals → list of all active goals<br/>
+📁 Categories → grouped goals by category<br/>
+🏁 Completed → finished goals list<br/>
+➕ Create Goal → add new goal<br/>
+✏️ Edit Goal → modify existing goal<br/>
+📄 Goal Details → full goal information<br/>
+⚙️ Settings → theme and language control<br/>
+
+## Screenshots
+public/images
+
+## How to Run the Project
+Clone the repository
+```
+
+git clone https://github.com/your-username/goals-tracker.git
+```
+### Install dependencies
+
+
+```
+npm install
+```
+
+### Start the development server
+
+
+```
+npm run dev
+```
+
+## Project Structure
+
+src/<br/>
+ ├── components/<br/>
+ ├── pages/<br/>
+ ├── data/<br/>
+ ├── utils/<br/>
+ ├── theme/<br/>
+ ├── i18n/<br/>
+ └── App.jsx<br/>
+
+## Author
+Developed by Afsana Tajik
+
+
+
